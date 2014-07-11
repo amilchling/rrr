@@ -27,7 +27,7 @@
               <li class="has-dropdown">
                 <a href="{{pathFor 'services'}}">SERVICES</a>
                 <ul class="dropdown">
-                  <li><a href="#">Roof Replacements</a></li>
+                  <li><a href="{{pathFor 'services'}}">Roof Replacements</a></li>
                   <li><a href="#">Roof Repairs</a></li>
                   <li><a href="#">Gutters</a></li>
                   <li><a href="#">Emergency Services</a></li>
@@ -43,32 +43,7 @@
     </div>
 
     <!--free inspection form-->
-    <div class="large-2 columns inspect">
-      <h2>SCHEDULE YOUR <br>FREE INSPECTION</h2>
-      <form>
-      <div class="row">
-        <div class="large-12 columns">
-          <input id="name-input" type="text" placeholder="Name" />
-        </div>
-      </div>
-      <div class="row">
-        <div class="large-12 columns">
-          <input id="phone-input" type="text" placeholder="Phone" />
-        </div>
-      </div>
-      <div class="row">
-        <div class="large-12 columns">
-          <input id="email-input" type="text" placeholder="Email" />
-        </div>
-      </div>
-      <div class="row">
-        <div class="large-12 columns">
-          <input id="zip-input" type="text" placeholder="Zip Code" />
-        </div>
-      </div>
-      <a href="#" class="button tiny">SUBMIT</a>
-      </form>
-    </div>
+    {{> inspectionForm}}
     </strong>
 
 </div>
@@ -151,32 +126,7 @@
     </div>
     <!--free inspection form-->
     <strong class="hide-for-small-only">
-    <div class="large-2 columns inspect">
-      <h2>SCHEDULE YOUR <br>FREE INSPECTION</h2>
-      <form>
-      <div class="row">
-        <div class="large-12 columns">
-          <input type="text" placeholder="Name" />
-        </div>
-      </div>
-      <div class="row">
-        <div class="large-12 columns">
-          <input type="text" placeholder="Phone" />
-        </div>
-      </div>
-      <div class="row">
-        <div class="large-12 columns">
-          <input type="text" placeholder="Email" />
-        </div>
-      </div>
-      <div class="row">
-        <div class="large-12 columns">
-          <input type="text" placeholder="Zip Code" />
-        </div>
-      </div>
-      <a href="#" class="button tiny">SUBMIT</a>
-      </form>
-    </div>
+    {{> inspectionForm}}
     </strong>
 </div>
 </template>
@@ -185,15 +135,30 @@
 <!--HOME PAGE ORBIT-->
 
 <template name="main">
-  <div class="row full-width">
-  <div class="medium-12 columns" id="slick-main-div">
-
-    <div class="headline-images">
-  <!--
-      <div class="large-7 columns tagline">
-      North Carolina and Virginia's Roofer of Choice since 2009!
-      </div> -->
-    </div>
+  <div class="row full-width" id="orbiter-row">
+  <div class="medium-12 columns slick-div">
+    <!--<img src="img/suburbia.jpg"> -->
+      <div class="headline-images">
+        <div class="large-7 columns tagline">
+        North Carolina and Virginia's Roofer of Choice since 2009!
+        </div> 
+      </div>
+  </div>
+  <div class="medium-12 columns slick-div">
+    <!--<img src="img/suburbia.jpg"> -->
+      <div class="headline-images">
+        <div class="large-7 columns tagline">
+        North Carolina and Virginia's Roofer of Choice since 2009!
+        </div> 
+      </div>
+  </div>
+  <div class="medium-12 columns slick-div">
+    <!--<img src="img/suburbia.jpg"> -->
+      <div class="headline-images">
+        <div class="large-7 columns tagline">
+        North Carolina and Virginia's Roofer of Choice since 2009!
+        </div> 
+      </div>
   </div>
   </div>
 </template> 
@@ -250,32 +215,7 @@
   <!-- arrangement for mobile view -->
   <strong class="show-for-small-only">
     <!--inspection -->
-    <div class="large-2 columns inspect">
-      <h2>SCHEDULE YOUR <br>FREE INSPECTION</h2>
-      <form>
-      <div class="row">
-        <div class="large-12 columns">
-          <input id="name-input" type="text" placeholder="Name" />
-        </div>
-      </div>
-      <div class="row">
-        <div class="large-12 columns">
-          <input id="phone-input" type="text" placeholder="Phone" />
-        </div>
-      </div>
-      <div class="row">
-        <div class="large-12 columns">
-          <input id="email-input" type="text" placeholder="Email" />
-        </div>
-      </div>
-      <div class="row">
-        <div class="large-12 columns">
-          <input id="zip-input" type="text" placeholder="Zip Code" />
-        </div>
-      </div>
-      <a href="#" class="button expand submitInspection">SUBMIT</a>
-      </form>
-    </div>
+    {{> inspectionForm}}
 
     <!--services-->
     <div class="row full-width extra">
@@ -352,7 +292,13 @@
 
   <!-- about mobile display -->
   <strong class="show-for-small-only">
-  <div class="large-2 columns inspect">
+    {{> inspectionForm}}
+  </strong>
+
+</template>
+
+<template name="inspectionForm">
+  <div class="large-2 columns inspect" id="inspection-form-div">
     <!-- free inspection form -->
     <h2>SCHEDULE YOUR <br>FREE INSPECTION</h2>
     <form>
@@ -379,10 +325,7 @@
     <a href="#" class="button expand submitInspection">SUBMIT</a>
     </form>
   </div>
-  </strong>
-
 </template>
-
 
 <!-- STORM DAMAGE -->
 
@@ -447,33 +390,7 @@
 
   <!-- storm damage mobile display -->
   <strong class="show-for-small-only">
-  <div class="large-2 columns inspect">
-    <!-- free inspection form -->
-    <h2>SCHEDULE YOUR <br>FREE INSPECTION</h2>
-    <form>
-    <div class="row">
-      <div class="large-12 columns">
-        <input id="name-input" type="text" placeholder="Name" />
-      </div>
-    </div>
-    <div class="row">
-      <div class="large-12 columns">
-        <input id="phone-input" type="text" placeholder="Phone" />
-      </div>
-    </div>
-    <div class="row">
-      <div class="large-12 columns">
-        <input id="email-input" type="text" placeholder="Email" />
-      </div>
-    </div>
-    <div class="row">
-      <div class="large-12 columns">
-        <input id="zip-input" type="text" placeholder="Zip Code" />
-      </div>
-    </div>
-    <a href="#" class="button expand submitInspection">SUBMIT</a>
-    </form>
-  </div>
+  {{> inspectionForm}}
   </strong>
 
 </template>
@@ -621,33 +538,7 @@
 
   <!-- services mobile display -->
   <strong class="show-for-small-only">
-  <div class="large-2 columns inspect">
-    <!-- free inspection form -->
-    <h2>SCHEDULE YOUR <br>FREE INSPECTION</h2>
-    <form>
-    <div class="row">
-      <div class="large-12 columns">
-        <input id="name-input" type="text" placeholder="Name" />
-      </div>
-    </div>
-    <div class="row">
-      <div class="large-12 columns">
-        <input id="phone-input" type="text" placeholder="Phone" />
-      </div>
-    </div>
-    <div class="row">
-      <div class="large-12 columns">
-        <input id="email-input" type="text" placeholder="Email" />
-      </div>
-    </div>
-    <div class="row">
-      <div class="large-12 columns">
-        <input id="zip-input" type="text" placeholder="Zip Code" />
-      </div>
-    </div>
-    <a href="#" class="button expand submitInspection">SUBMIT</a>
-    </form>
-  </div>
+  {{> inspectionForm}}
   </strong>
 
 </template>
@@ -727,33 +618,7 @@
 
   <!-- contact mobile display -->
   <strong class="show-for-small-only">
-  <div class="large-2 columns inspect">
-    <!-- free inspection form -->
-    <h2>SCHEDULE YOUR <br>FREE INSPECTION</h2>
-    <form>
-    <div class="row">
-      <div class="large-12 columns">
-        <input id="name-input" type="text" placeholder="Name" />
-      </div>
-    </div>
-    <div class="row">
-      <div class="large-12 columns">
-        <input id="phone-input" type="text" placeholder="Phone" />
-      </div>
-    </div>
-    <div class="row">
-      <div class="large-12 columns">
-        <input id="email-input" type="text" placeholder="Email" />
-      </div>
-    </div>
-    <div class="row">
-      <div class="large-12 columns">
-        <input id="zip-input" type="text" placeholder="Zip Code" />
-      </div>
-    </div>
-    <a href="#" class="button expand submitInspection">SUBMIT</a>
-    </form>
-  </div>
+  {{> inspectionForm}}
   </strong>
 
 </template>

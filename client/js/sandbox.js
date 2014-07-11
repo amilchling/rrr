@@ -4,11 +4,11 @@ Meteor.startup(function(){
 }); 
 
 Template.main.rendered = function(){
-	/*
-	$('#slick-main-div').slick({
-		autoplay: false,
+
+	$('#orbiter-row').slick({
+		autoplay: true,
 		dots: true
-	});*/
+	});
 }
 
 Template.header.events = {
