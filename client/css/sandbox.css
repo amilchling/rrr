@@ -55,8 +55,18 @@
 	background-color: #F5F5F5;
 }
 
-.top-bar {
+.big-top-bar {
 	background-color: #F5F5F5;
+}
+
+.small-top-bar {
+	background-color: #264195;
+	position: fixed;
+}
+
+.small-top-bar2 {
+	background-color: #264195;
+	position: fixed;
 }
 
 .contain-to-grid{
@@ -108,7 +118,6 @@
 .inspect {
 	background-color: #264195;
 	text-align: center;
-	max-height: 19.5em;
 }
 
 input[type="text"] {
@@ -164,8 +173,20 @@ input[type="text"] {
 	width: 20em;
 }
 
+.about-image2{
+	width: 20em;
+	text-align: center;
+}
+
 .about-content{
 	padding-top: 12em;
+	padding-left: 5em;
+	background-color: white;
+	padding-bottom: 3em;
+}
+
+.about-content2{
+	padding-top: 5em;
 	padding-left: 5em;
 	background-color: white;
 	padding-bottom: 3em;
@@ -175,11 +196,23 @@ input[type="text"] {
 	padding-top: 26em;
 }
 
+.testimonial2 {
+	padding-top: 2em;
+	padding-bottom: 3em;
+	padding-left: 5em;
+}
+
 .storm {
 	padding-top: 12em;
 	padding-left: 5em;
 	background-color: white;
 	padding-bottom: 3em;
+}
+
+.storm2 {
+	padding-top: 5em;
+	padding-left: 5em;
+	background-color: white;
 }
 
 .storm-image{
@@ -193,12 +226,24 @@ input[type="text"] {
 	padding-bottom: 3em;
 }
 
+.service2 {
+	padding-top: 5em;
+	padding-left: 5em;
+	background-color: white;
+	padding-bottom: 3em;
+}
+
 .service-sections {
 	padding-bottom: 2em;
 }
 
 .service-content {
 	padding-top: 3em;
+}
+
+.service-content2 {
+	padding-left: 3em;
+	padding-top: 5em;
 }
 
 .service-media {
@@ -219,14 +264,31 @@ input[type="text"] {
 	background-color: white;
 }
 
+.contactus2 {
+	padding-top: 5em;
+	padding-left: 3em;
+	background-color: white;
+}
+
 .addresses {
 	padding-top: 2.5em;
 	padding-left: 4em;
 }
 
+.addresses2 {
+	padding-top: 2.5em;
+	padding-left: 1em;
+}
+
 .social {
 	padding-top: 25.5em;
 	text-align: center;
+}
+
+.social2 {
+	padding-bottom: 3em;
+	text-align: center;
+	padding-left: 5em;
 }
 
 .social-icon {
@@ -336,4 +398,22 @@ a:hover {
 
 .center-horiz{
 	margin: 0 auto;
+}
+
+
+#inspection-form-div{
+	position: absolute;
+	right: 0;
+	z-index:100;
+}
+
+#inspection-form-div{
+	position: absolute;
+	right: 0;
+	z-index:100;
+}
+
+.columns.slick-div{
+	padding-left: 0;
+	padding-right: 0;
 }
