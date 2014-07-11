@@ -1,0 +1,339 @@
+.head {
+	height: 10em;
+	max-height: 10em;
+}
+
+.head-logo {
+	background-color: #F5F5F5;
+	height: 10em;
+	max-height: 10em;
+}
+
+.head-logo2 {
+	background-color: #F5F5F5;
+	height: 10em;
+	max-height: 10em;
+}
+
+.logo {
+	margin-top: 20px;
+	margin-right: 10px;
+	margin-left: 30px;
+	margin-bottom: 1em;
+}
+
+.logo2 {
+	margin-top: 20px;
+	margin-right: 10px;
+	margin-left: 30px;
+	margin-bottom: 1em;
+}
+
+.top-contact {
+	margin-top: .5em;
+	color: #2399d5;
+	font-weight: 900;
+	text-align: right;
+}
+
+.top-contact2 {
+	margin-top: .5em;
+	color: #2399d5;
+	font-weight: 900;
+	text-align: right;
+}
+
+.nav-choices {
+	height: 10em;
+	max-height: 10em;
+	background-color: #F5F5F5;
+}
+
+.nav-choices2 {
+	height: 10em;
+	max-height: 10em;
+	background-color: #F5F5F5;
+}
+
+.top-bar {
+	background-color: #F5F5F5;
+}
+
+.contain-to-grid{
+	background-color: white;
+}
+
+.top-bar-section li.active:not(.has-form) a:not(.button) {
+	background-color: #F5F5F5;
+	color: black;
+	font-size: 1.1em;
+	font-weight: 700;
+}
+
+.top-bar-section li.active:not(.has-form) a:not(.button):hover {
+	background: #264195;
+	color: white;
+	font-size: 1.1em;
+	font-weight: 700;
+}
+
+.top-bar-section li:not(.has-form) a:not(.button) {
+	background-color: #F5F5F5;
+	color: black;
+	font-size: 1.1em;
+	font-weight: 700;
+}
+
+.top-bar-section li:not(.has-form) a:not(.button):hover {
+	background: #264195;
+	color: white;
+	font-size: 1.1em;
+	font-weight: 700;
+}
+
+.top-bar-section .dropdown li:not(.has-form) a:not(.button) {
+	background-color: #F5F5F5;
+	color: black;
+	font-size: 1.1em;
+	font-weight: 700;
+}
+
+.top-bar-section .dropdown li:not(.has-form) a:not(.button):hover {
+	background: #264195;
+	color: white;
+	font-size: 1.1em;
+	font-weight: 700;
+}
+
+.inspect {
+	background-color: #264195;
+	text-align: center;
+	max-height: 19.5em;
+}
+
+input[type="text"] {
+	max-height: 2em;
+}
+
+.headline-images {
+	height: 15em;
+	min-height: 20em;
+ 	max-height: 20em;
+ 	background-image: url("/img/suburbia.jpg");
+ 	background-size: cover;
+ 	z-index: 100;
+}
+
+.tagline{
+	margin-top: 10em;
+	background-color: white;
+	padding-top: .5em;
+	padding-bottom: .5em;
+	text-align: right;
+	font-weight: 700;
+	font-size: 1.4em;
+}
+
+.main-services {
+	padding-top: 1em;
+}
+
+.service-buttons {
+	margin-top: 2em;
+}
+
+.welcome {
+	padding-top: 2em;
+	padding-bottom: 3em;
+	padding-left: 2em;
+}
+
+.certainteed-logo {
+	width: 60%;
+	margin-top: 1em;
+	padding-left: 15%
+}
+
+.bbb-logo {
+	width: 60%;
+	margin-top: 2em;
+	padding-left: 10%
+}
+
+.about-image{
+	width: 20em;
+}
+
+.about-content{
+	padding-top: 12em;
+	padding-left: 5em;
+	background-color: white;
+	padding-bottom: 3em;
+}
+
+.testimonial {
+	padding-top: 26em;
+}
+
+.storm {
+	padding-top: 12em;
+	padding-left: 5em;
+	background-color: white;
+	padding-bottom: 3em;
+}
+
+.storm-image{
+	width: 20em;
+}
+
+.service {
+	padding-top: 12em;
+	padding-left: 5em;
+	background-color: white;
+	padding-bottom: 3em;
+}
+
+.service-sections {
+	padding-bottom: 2em;
+}
+
+.service-content {
+	padding-top: 3em;
+}
+
+.service-media {
+	text-align: right;
+}
+
+.service-image {
+	width: 20em;
+}
+
+.service-media2 {
+	text-align: center;
+}
+
+.contact {
+	padding-top: 12em;
+	padding-left: 5em;
+	background-color: white;
+}
+
+.addresses {
+	padding-top: 2.5em;
+	padding-left: 4em;
+}
+
+.social {
+	padding-top: 25.5em;
+	text-align: center;
+}
+
+.social-icon {
+	width: 5em;
+}
+
+.satisfaction {
+	text-align: left;
+}
+
+.footer {
+	margin-left: 1em;
+	margin-right: 1em;
+}
+
+h1 {
+	color: #2399d5;
+	font-weight: 900;
+}
+
+h2 {
+	padding-top: .5em;
+	font-size: 1.4em;
+	color: white;
+	font-weight: 400;
+	font-family: 'Merriweather', serif;
+}
+
+h3 {
+	color: #264195;
+	font-weight: 900;
+}
+
+h4 {
+	font-size: 1.2em;
+	color: #2399d5;
+	font-weight: 700;
+	text-align: center;
+}
+
+h5 {
+	font-size: 1.4em;
+}
+
+h6 {
+	font-size: 2em;
+}
+
+.button {
+	background-color: #1962ac;
+	color: white;
+	font-size: 1em;
+	font-weight: 400;
+}
+
+.button:hover {
+	background-color: #2399d5;
+}
+
+.button.expand {
+	background-color: #2399d5;
+	color: white;
+	font-weight: 700;
+}
+
+.button.expand:hover {
+	background-color: #1962ac;
+}
+
+.button.tiny {
+	background-color: #2399d5;
+	color: white;
+	font-weight: 700;
+}
+
+.button.tiny:hover {
+	background-color: #1962ac;
+}
+
+.button.small {
+	background-color: #1962ac;
+	color: white;
+	font-size: 1em;
+	font-weight: 400;
+}
+
+.button.small:hover {
+	background-color: #2399d5;
+}
+
+a {
+	color: #264195
+}
+
+a:hover {
+	color: #226ad5
+}
+
+.row.full-width{
+	width: 100%;
+	max-width: 100%;
+}
+
+.inline {
+	display: inline;
+}
+
+.center-horiz{
+	margin: 0 auto;
+}

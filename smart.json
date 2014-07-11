@@ -1,0 +1,9 @@
+{
+  "packages": {
+    "zurb-foundation": {},
+    "foundation-icons-general": {},
+    "moment": {},
+    "iron-router": {},
+    "slick": {}
+  }
+}

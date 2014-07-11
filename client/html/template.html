@@ -1,0 +1,784 @@
+<!-- HEADER -->
+
+<template name="header">
+  
+  <div class="row full-width head">
+    <!--MEDIUM+ HEADER-->
+    <strong class="hide-for-small">
+    <!--logo-->
+    <div class="large-3 columns head-logo">
+      <a href="{{pathFor 'home'}}"><img src="img/rrrlogo.png" class="logo"></a>
+    </div>
+    
+    <div class="large-7 columns nav-choices">
+      <!--phone number-->
+      <div class="row full-width">
+        <h6 class="top-contact">Have Questions? We're here to help!<br>Call us toll-free at (888) 210-4047</h6>
+      </div>
+      <!--nav-->
+      <div class="row full-width">
+      <div class="contain-to-grid">
+        <nav class="top-bar" data-topbar>
+          <section class="top-bar-section">
+            <ul class="right">
+              <li class="active"><a href="{{pathFor 'home'}}">HOME</a></li>
+              <li class="active"><a href="{{pathFor 'about'}}">ABOUT US</a></li>
+              <li class="active"><a href="{{pathFor 'stormdamage'}}">STORM DAMAGE</a></li>
+              <li class="has-dropdown">
+                <a href="{{pathFor 'services'}}">SERVICES</a>
+                <ul class="dropdown">
+                  <li><a href="#">Roof Replacements</a></li>
+                  <li><a href="#">Roof Repairs</a></li>
+                  <li><a href="#">Gutters</a></li>
+                  <li><a href="#">Emergency Services</a></li>
+                  <li><a href="#">Free Inspections</a></li>
+                </ul>
+              </li>
+              <li class="active"><a href="{{pathFor 'contact'}}">CONTACT</a></li>
+            </ul>
+          </section>
+         </nav>
+      </div>
+      </div> 
+    </div>
+
+    <!--free inspection form-->
+    <div class="large-2 columns inspect">
+      <h2>SCHEDULE YOUR <br>FREE INSPECTION</h2>
+      <form>
+      <div class="row">
+        <div class="large-12 columns">
+          <input id="name-input" type="text" placeholder="Name" />
+        </div>
+      </div>
+      <div class="row">
+        <div class="large-12 columns">
+          <input id="phone-input" type="text" placeholder="Phone" />
+        </div>
+      </div>
+      <div class="row">
+        <div class="large-12 columns">
+          <input id="email-input" type="text" placeholder="Email" />
+        </div>
+      </div>
+      <div class="row">
+        <div class="large-12 columns">
+          <input id="zip-input" type="text" placeholder="Zip Code" />
+        </div>
+      </div>
+      <a href="#" class="button tiny">SUBMIT</a>
+      </form>
+    </div>
+    </strong>
+
+</div>
+
+  <!-- MOBILE TOP BAR -->
+  <strong class="hide-for-medium-up">
+  <nav class="top-bar" data-topbar>
+  <ul class="title-area">
+    <li class="name">
+      <h1><a href="tel:888-210-4047">(888) 210-4047</a></h1>
+    </li>
+    <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+  </ul>
+
+  <section class="top-bar-section">
+    <!-- Right Nav Section -->
+    <ul class="right">
+      <li class="active"><a href="{{pathFor 'home'}}">Home</a></li>
+      <li class="active"><a href="{{pathFor 'about'}}">About</a></li>
+      <li class="active"><a href="{{pathFor 'stormdamage'}}">Storm Damage</a></li>
+      <li class="has-dropdown">
+        <a href="{{pathFor 'services'}}">Services</a>
+        <ul class="dropdown">
+          <li><a href="#">Roof Replacements</a></li>
+          <li><a href="#">Roof Repairs</a></li>
+          <li><a href="#">Gutters</a></li>
+          <li><a href="#">Emergency Services</a></li>
+          <li><a href="#">Free Inspections</a></li>
+          <li class="active"><a href="{{pathFor 'contact'}}">Contact</a></li>
+        </ul>
+      </li>
+    </ul>
+  </section>
+</nav>
+  </strong>
+
+</template>
+
+
+<!-- FIXED HEADER -->
+
+<template name="fixed">
+  <div class="row full-width fixed">
+    <!--logo-->
+    <div class="large-3 columns head-logo2">
+      <a href="{{pathFor 'home'}}"><img src="img/rrrlogo.png" class="logo2"></a>
+    </div>
+      
+    <div class="large-7 columns nav-choices2">
+      <!--phone-->
+      <div class="row full-width">
+        <h6 class="top-contact2">Have Questions? We're here to help!<br>Call us toll-free at (888) 210-4047</h6>
+      </div>
+      <!--nav-->
+      <div class="row full-width">
+      <div class="contain-to-grid">
+      <nav class="top-bar" data-topbar>
+        <section class="top-bar-section">
+          <ul class="right">
+            <li class="active"><a href="{{pathFor 'home'}}">HOME</a></li>
+            <li class="active"><a href="{{pathFor 'about'}}">ABOUT US</a></li>
+            <li class="active"><a href="{{pathFor 'stormdamage'}}">STORM DAMAGE</a></li>
+            <li class="has-dropdown">
+              <a href="{{pathFor 'services'}}">SERVICES</a>
+                <ul class="dropdown">
+                  <li><a href="#">Roof Replacements</a></li>
+                  <li><a href="#">Roof Repairs</a></li>
+                  <li><a href="#">Gutters</a></li>
+                  <li><a href="#">Emergency Services</a></li>
+                  <li><a href="#">Free Inspections</a></li>
+                </ul>
+            </li>
+            <li class="active"><a href="{{pathFor 'contact'}}">CONTACT</a></li>
+          </ul>
+        </section>
+      </nav>
+      </div>
+      </div>
+   
+    </div>
+    <!--free inspection form-->
+    <strong class="hide-for-small-only">
+    <div class="large-2 columns inspect">
+      <h2>SCHEDULE YOUR <br>FREE INSPECTION</h2>
+      <form>
+      <div class="row">
+        <div class="large-12 columns">
+          <input type="text" placeholder="Name" />
+        </div>
+      </div>
+      <div class="row">
+        <div class="large-12 columns">
+          <input type="text" placeholder="Phone" />
+        </div>
+      </div>
+      <div class="row">
+        <div class="large-12 columns">
+          <input type="text" placeholder="Email" />
+        </div>
+      </div>
+      <div class="row">
+        <div class="large-12 columns">
+          <input type="text" placeholder="Zip Code" />
+        </div>
+      </div>
+      <a href="#" class="button tiny">SUBMIT</a>
+      </form>
+    </div>
+    </strong>
+</div>
+</template>
+
+
+<!--HOME PAGE ORBIT-->
+
+<template name="main">
+  <div class="row full-width">
+  <div class="medium-12 columns" id="slick-main-div">
+
+    <div class="headline-images">
+  <!--
+      <div class="large-7 columns tagline">
+      North Carolina and Virginia's Roofer of Choice since 2009!
+      </div> -->
+    </div>
+  </div>
+  </div>
+</template> 
+
+
+<!-- HOME PAGE SERVICE BUTTONS -->
+
+<template name="extra">
+  <strong class="hide-for-small-only">
+  <div class="row full-width main-services">
+    <!--services-->
+    <div class="large-2 columns">
+      <a href="#"><img src="img/roofing-icon2.png" onmouseover="this.src='img/roofing-icon.png'" onmouseout="this.src='img/roofing-icon2.png'" /></a>
+    </div>
+    <div class="large-2 columns">
+      <a href="#"><img src="img/roof-repair-icon2.png" onmouseover="this.src='img/roof-repair-icon.png'" onmouseout="this.src='img/roof-repair-icon2.png'" /></a>
+     </div>
+    <div class="large-2 columns">
+      <a href="#"><img src="img/gutter-icon2.png" onmouseover="this.src='img/gutter-icon.png'" onmouseout="this.src='img/gutter-icon2.png'" /></a>
+    </div>
+    <div class="large-2 columns">
+      <a href="#"><img src="img/storm-icon2.png" onmouseover="this.src='img/storm-icon.png'" onmouseout="this.src='img/storm-icon2.png'" /></a>
+    </div>
+    <div class="large-2 columns">
+      <a href="#"><img src="img/emergency-icon2.png" onmouseover="this.src='img/emergency-icon.png'" onmouseout="this.src='img/emergency-icon2.png'" /></a>
+    </div>
+    <div class="large-2 columns">
+      <a href="#"><img src="img/inspection-icon2.png" onmouseover="this.src='img/inspection-icon.png'" onmouseout="this.src='img/inspection-icon2.png'" /></a>
+    </div>
+  </div>
+</strong>
+</template>
+
+
+<!-- HOME PAGE WELCOME MESSAGE -->
+
+<template name="welcome">
+  <div class="row full-width welcome">
+    <div class="large-9 columns">
+      <h3>Welcome to Recovery Roofing &amp; Restoration.</h3>
+      <p>We offer the highest quality roof and gutter repairs and replacements in North Carolina and Virginia.</p>
+      <h3>When storm damage affects your home, we're here to help.</h3>
+      <p>Recovery Roofing &amp; Restoration specializes in identifying and repairing storm damaged roofs. We work with adjusters throughout the insurance claim process to provide homeowners with affordable roof repair or replacement.</p>
+      <!--learn more about storm damage button -->
+      <a href="http://localhost:3000/stormdamage" class="button small">Learn More</a>
+    </div>
+    <!-- accreditation logos -->
+    <div class="large-3 columns">
+      <img src="img/certainteed-select-shingle-master.png" class="certainteed-logo">
+      <img src="img/bbb.png" class="bbb-logo">
+    </div>
+  </div>
+
+  <!-- arrangement for mobile view -->
+  <strong class="show-for-small-only">
+    <!--inspection -->
+    <div class="large-2 columns inspect">
+      <h2>SCHEDULE YOUR <br>FREE INSPECTION</h2>
+      <form>
+      <div class="row">
+        <div class="large-12 columns">
+          <input id="name-input" type="text" placeholder="Name" />
+        </div>
+      </div>
+      <div class="row">
+        <div class="large-12 columns">
+          <input id="phone-input" type="text" placeholder="Phone" />
+        </div>
+      </div>
+      <div class="row">
+        <div class="large-12 columns">
+          <input id="email-input" type="text" placeholder="Email" />
+        </div>
+      </div>
+      <div class="row">
+        <div class="large-12 columns">
+          <input id="zip-input" type="text" placeholder="Zip Code" />
+        </div>
+      </div>
+      <a href="#" class="button expand submitInspection">SUBMIT</a>
+      </form>
+    </div>
+
+    <!--services-->
+    <div class="row full-width extra">
+      <div class="large-12 columns service-buttons">
+        <a href="#" class="button expand ">Roof Replacements</a>
+        <a href="#" class="button expand">Roof Repairs</a>
+        <a href="#" class="button expand">Gutters</a>
+        <a href="#" class="button expand">Storm Damage</a>
+        <a href="#" class="button expand">Emergency Services</a>
+        <a href="#" class="button expand">Free Inspections</a>
+      </div>
+    </div>
+  </strong>
+
+</template>
+
+
+<!-- ABOUT -->
+
+<template name="aboutus">
+  <div class="row full-width">
+    <div class="large-10 columns about-content">
+    <!-- about overview -->
+    <h3>About Us</h3>
+    <p>Recovery Roofing &amp; Restoration, LLC is a people-oriented company committed to providing our clients with the finest quality of service. <br>
+    <ul>
+      <li>We train our team of Sales Associates in an innovative working environment that promotes a sense of family and teamwork.</li>
+      <li>We use the best quality materials from Certainteed™, the nation’s oldest and most respected roofing manufacturer.</li>
+      <li>As a SELECT Shingle Master™ Contractor, we have proudly attained the highest level of credentials from Certainteed™.</li>
+    </ul></p><br>
+
+    <img src="img/homes.jpg" alt="Filler 1" class="about-image">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <img src="img/homes.jpg" alt="Filler 2" class="about-image">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <img src="img/homes.jpg" alt="Filler 3" class="about-image">
+
+    <!-- questions to ask your roofer -->
+    <br><br><br><br><h3>5 Questions You Must Ask Your Roofer</h3>
+      <!-- local -->
+      <p><b><i> 1. Are you Local? </i></b><br>
+      Local roofers have a smaller team of hand picked employees with better workmanship and customer service.  <br>
+      <b>Recovery Roofing &amp; Restoration is local! Our office is located at 1738 Hillandale Rd, Suite 102, Durham, NC 27705. Our shop is located in downtown Durham. Our additional branches out of their own established local offices. Our local Project Managers know the best ways to serve their neighbors.</b><br><br>
+      <!-- brand/manufacturer -->
+      <b><i> 2. What brand do you install and are you certified with the manufacturer?</i></b><br>
+      Do not let anyone talk you into cheap shingles. Require manufacturer certification and check certification level! Certainteed™ is the best brand. <br>
+      <b>Recovery Roofing &amp; Restoration is Certainteed™ SELECT Shingle Master™ certified. We uphold the highest credentials. </b><br><br>
+      <!-- insured -->
+      <b><i> 3. Are you insured? </i></b><br>
+      Uninsured contractors leave you paying the price if property damage or injuries occur. Require certificate of insurance and make sure it includes workman’s comp. <br>
+      <b>Recovery Roofing &amp; Restoration carries $2 million of insurance to protect ourselves and our clients.</b><br><br>
+      <!-- bare wood -->
+      <b><i> 4. Do you strip to bare wood? </i></b><br>
+      Re-roofs work in a pinch, but significantly reduce the life of your shingles, making repairs down the road cost several times more. <br>
+      <b>Recovery Roofing &amp; Restoration always strips to bare wood. </b><br><br>
+      <!-- warranty -->
+      <b><i> 5. Will you warranty someone else’s work?</i></b><br>
+      Contractors committed to quality workmanship and client satisfaction warranty their work. <br>
+      <b>Yes, Recovery Roofing &amp; Restoration will warranty someone else’s work!</b><br><br></p>
+    </div>
+
+    <!-- testimonial -->
+    <div class="large-2 columns testimonial">
+      <h4>Testimonials</h4><br>
+      
+      <p><b>"Matthew was referred to me by my neighbor and offered me a free roof inspection. I didn't realize how much storm damage I had. My insurance company paid to replace my roof." </b>
+      <br><i> G.M., Raleigh NC homeowner </i><br><br>
+      
+      <b>"Recovery Roofing of NC has replaced six roofs on my street. My neighbors and I all had shingles blown off from the storm, but now my roof is brand new and under warranty." </b>
+      <br><i>B.G., Durham NC homeowner </i><br><br>
+
+      <b>"Within 2 hours, you had my roof tarped! Thank you. The storm yesterday afternoon would have ruined everything I have. And, by the way, the new roof looks great. I love the new color.” </b>
+      <br><i>J.B., Greensboro NC</i></p>
+    </div>
+  </div>
+
+  <!-- about mobile display -->
+  <strong class="show-for-small-only">
+  <div class="large-2 columns inspect">
+    <!-- free inspection form -->
+    <h2>SCHEDULE YOUR <br>FREE INSPECTION</h2>
+    <form>
+    <div class="row">
+      <div class="large-12 columns">
+        <input id="name-input" type="text" placeholder="Name" />
+      </div>
+    </div>
+    <div class="row">
+      <div class="large-12 columns">
+        <input id="phone-input" type="text" placeholder="Phone" />
+      </div>
+    </div>
+    <div class="row">
+      <div class="large-12 columns">
+        <input id="email-input" type="text" placeholder="Email" />
+      </div>
+    </div>
+    <div class="row">
+      <div class="large-12 columns">
+        <input id="zip-input" type="text" placeholder="Zip Code" />
+      </div>
+    </div>
+    <a href="#" class="button expand submitInspection">SUBMIT</a>
+    </form>
+  </div>
+  </strong>
+
+</template>
+
+
+<!-- STORM DAMAGE -->
+
+<template name="storm">
+  <div class="row full-width">
+    <div class="large-10 columns storm">
+      <!-- main storm overview -->
+      <h3>Storm Damage</h3>
+      <p>Recovery Roofing &amp; Restoration specializes in identifying and repairing storm damaged roofs. We work with adjusters throughout the insurance claim process to provide homeowners with affordable roof repair or replacement. <br><br>
+    
+      Many homeowners do not realize how much wind, rain, and hail can affect them.  If you spot any of the common signs of storm damage listed below, you may be leaving your home unprotected. </p>
+      
+      <!-- common signs -->
+      <div class="row full-width">
+        <div class="large-5 columns">
+        <p><b>Common signs of roof damage:</b>
+          <ul>
+            <li>Missing shingles</li>
+            <li>Bruises or dented asphalt shingles</li>
+            <li>Cracked or broken tile, slate, or concrete shingles</li>
+            <li>Granules collecting in gutters or downspouts</li>
+            <li>Leaks in your roof or ceiling</li>
+            <li>Dents on vents, gutters or flashing</li>
+          </ul><br><br>
+        
+        <b>Common signs of exterior damage:</b>
+          <ul>
+            <li>Dings and dents</li>
+            <li>Cracks and splitting</li>
+            <li>Holes and breaks</li>
+            <li>Chipping and discoloration</li>
+          </ul></p>
+        </div>
+      <!-- pictures -->
+        <div class="large-7 columns">
+          <br><br><br>
+          <img src="img/homes.jpg" alt="Filler 1" class="storm-image">
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <img src="img/homes.jpg" alt="Filler 1" class="storm-image">
+        </div>
+      </div>
+    
+      <h3>Insurance Claims Assistance </h3>
+      <p>Affected by storm damage? Let us help you! Often, adjusters have dozens of claims to settle for insurance companies. We know how to navigate through the system to most benefit our clients. Having an experienced eye assisting throughout the process will ensure that you receive the settlement you are entitled to.</p>
+    </div>
+
+    <!-- testimonials sidebar -->
+    <div class="large-2 columns testimonial">
+      <h4>Testimonials</h4><br>
+      
+      <p><b>"Matthew was referred to me by my neighbor and offered me a free roof inspection. I didn't realize how much storm damage I had. My insurance company paid to replace my roof." </b>
+      <br><i> G.M., Raleigh NC homeowner </i><br><br>
+      
+      <b>"Recovery Roofing of NC has replaced six roofs on my street. My neighbors and I all had shingles blown off from the storm, but now my roof is brand new and under warranty." </b>
+      <br><i>B.G., Durham NC homeowner </i><br><br>
+
+      <b>"Within 2 hours, you had my roof tarped! Thank you. The storm yesterday afternoon would have ruined everything I have. And, by the way, the new roof looks great. I love the new color.” </b>
+      <br><i>J.B., Greensboro NC</i></p>
+    </div>
+  
+  </div>
+
+  <!-- storm damage mobile display -->
+  <strong class="show-for-small-only">
+  <div class="large-2 columns inspect">
+    <!-- free inspection form -->
+    <h2>SCHEDULE YOUR <br>FREE INSPECTION</h2>
+    <form>
+    <div class="row">
+      <div class="large-12 columns">
+        <input id="name-input" type="text" placeholder="Name" />
+      </div>
+    </div>
+    <div class="row">
+      <div class="large-12 columns">
+        <input id="phone-input" type="text" placeholder="Phone" />
+      </div>
+    </div>
+    <div class="row">
+      <div class="large-12 columns">
+        <input id="email-input" type="text" placeholder="Email" />
+      </div>
+    </div>
+    <div class="row">
+      <div class="large-12 columns">
+        <input id="zip-input" type="text" placeholder="Zip Code" />
+      </div>
+    </div>
+    <a href="#" class="button expand submitInspection">SUBMIT</a>
+    </form>
+  </div>
+  </strong>
+
+</template>
+
+
+<!-- SERVICES -->
+
+<template name="service">
+  <div class="row full-width">
+    <div class="large-10 columns service">
+
+    <h3>Services</h3>
+    
+    <!-- MEDIUM+ FORMAT -->
+    <strong class="show-for-medium-up">
+    <!-- MEDIUM+ roof replacement + repairs -->
+    <div class="row full-width service-sections">
+      <div class="large-7 columns service-content">
+        <p><b>ROOF REPLACEMENTS &amp; REPAIRS</b><br>
+        We have been installing roofs and satisfying customers from day one.  Whether you need an entire re-roof or a small repair, our experience makes us perfect for the job. Our installers are highly trained, highly skilled and will leave your home better protected and more beautiful than ever before. </p>
+      </div>
+      <div class="large-5 columns service-media">
+        <img src="img/homes.jpg" alt="Filler 1" class="service-image">
+      </div>
+    </div>
+    
+    <!-- MEDIUM+ roof replacement options -->
+    <div class="row full-width service-sections">
+      <div class="large-5 columns">
+        <img src="img/homes.jpg" alt="Filler 1" class="service-image">
+      </div>
+      <div class="large-7 columns service-content">
+        <p><b>ROOF REPLACEMENT OPTIONS</b><br>
+        Choices in the roofing industry have grown dramatically in the past few years.  Shingles are now produced in a myriad of styles and colors, enhancing the curb appeal and value of every home. We use premium shingles from the oldest and most acclaimed manufacturer in nation. Take a look at the products Certainteed provides at <a href="www.certainteed.com">www.certainteed.com</a>.</p>
+      </div>  
+    </div>
+  
+    <!-- MEDIUM+ gutters -->
+    <div class="row full-width service-sections">
+      <div class="large-7 columns service-content">
+        <p><b>GUTTERS</b><br>
+        Damaged gutters aren’t only an eyesore on a home, but have the potential to lead to many other structural headaches. We carefully remove problem gutters and seamlessly install new ones. No more worry about leaking and sagging gutters. Let us install our custom fabricated gutters today.</p>
+      </div>
+      <div class="large-5 columns service-media">
+        <img src="img/homes.jpg" alt="Filler 1" class="service-image">
+      </div>
+    </div>
+   
+    <!-- MEDIUM+ emergency services -->
+    <div class="row full-width service-sections">
+      <div class="large-5 columns">
+      <img src="img/homes.jpg" alt="Filler 1" class="service-image">
+    </div>
+    <div class="large-7 columns service-content">
+    <p><b>EMERGENCY SERVICES</b><br>
+    Preliminary damages leave your home and belongings exposed to the elements, leading to more severe detriment. We dispatch immediate relief at the first sign of these critical problems. Our technicians are trained to make effective temporary repairs to protect your home until a settlement can be reached with your insurance company.</p>
+    </div>
+    </div>
+
+    <!-- MEDIUM+ free inspections -->
+    <div class="row full-width">
+      <div class="large-7 columns service-content">
+        <p><b>FREE ROOF INSPECTIONS</b><br>
+        We provide free roof inspections for residents affected by storm damage. Our inspections expose simple maintenance items that can prolong your roofing system’s life and mitigate the risk of costly leaks. </p>
+      </div>
+      <div class="large-5 columns service-media">
+        <img src="img/homes.jpg" alt="Filler 1" class="service-image">
+      </div>
+    </div>
+    </strong>
+  
+  </div>
+
+    <!-- SMALL FORMAT -->
+    <strong class="show-for-small-only">
+    <!-- SMALL roof replacement + repairs -->
+    <div class="row full-width">
+      <div class="large-7 columns service-content">
+        <p><b>ROOF REPLACEMENTS &amp; REPAIRS</b><br>
+        We have been installing roofs and satisfying customers from day one.  Whether you need an entire re-roof or a small repair, our experience makes us perfect for the job. Our installers are highly trained, highly skilled and will leave your home better protected and more beautiful than ever before. </p>
+      </div>
+      <div class="large-5 columns service-media2">
+        <img src="img/homes.jpg" alt="Filler 1" class="service-image">
+      </div>
+    </div>
+   
+    <!-- SMALL roof replacement options -->
+    <div class="row full-width">
+      <div class="large-7 columns service-content">
+        <p><b>ROOF REPLACEMENT OPTIONS</b><br>
+        Choices in the roofing industry have grown dramatically in the past few years.  Shingles are now produced in a myriad of styles and colors, enhancing the curb appeal and value of every home. We use premium shingles from the oldest and most acclaimed manufacturer in nation. Take a look at the products Certainteed provides at <a href="www.certainteed.com">www.certainteed.com</a>.</p>
+      </div> 
+      <div class="large-5 columns service-media2">
+        <img src="img/homes.jpg" alt="Filler 1" class="service-image">
+      </div> 
+    </div>
+  
+    <!-- SMALL gutters -->
+    <div class="row full-width">
+      <div class="large-7 columns service-content">
+        <p><b>GUTTERS</b><br>
+        Damaged gutters aren’t only an eyesore on a home, but have the potential to lead to many other structural headaches. We carefully remove problem gutters and seamlessly install new ones. No more worry about leaking and sagging gutters. Let us install our custom fabricated gutters today.</p>
+      </div>
+      <div class="large-5 columns service-media2">
+        <img src="img/homes.jpg" alt="Filler 1" class="service-image">
+      </div>
+    </div>
+   
+    <!-- SMALL emergency services -->
+    <div class="row full-width"> 
+      <div class="large-7 columns service-content">
+        <p><b>EMERGENCY SERVICES</b><br>
+        Preliminary damages leave your home and belongings exposed to the elements, leading to more severe detriment. We dispatch immediate relief at the first sign of these critical problems. Our technicians are trained to make effective temporary repairs to protect your home until a settlement can be reached with your insurance company.</p>
+      </div>
+      <div class="large-5 columns service-media2">
+        <img src="img/homes.jpg" alt="Filler 1" class="service-image">
+      </div>
+    </div>
+
+    <!-- SMALL free inspection -->
+    <div class="row full-width">
+      <div class="large-7 columns service-content">
+        <p><b>FREE ROOF INSPECTIONS</b><br>
+        We provide free roof inspections for residents affected by storm damage. Our inspections expose simple maintenance items that can prolong your roofing system’s life and mitigate the risk of costly leaks. </p>
+      </div>
+      <div class="large-5 columns service-media2">
+        <img src="img/homes.jpg" alt="Filler 1" class="service-image">
+      </div>
+    </div>
+    </strong>
+
+    <!-- quality side bar -->
+    <div class="large-2 columns testimonial">
+      <h4>Quality made certain. Satisfaction guaranteed.</h4><br>
+      <!-- certainteed -->
+      <p><b>CertainTeed:<br>The Brand We Trust</b><br>
+      We install shingles manufactured by CertainTeed, North America’s oldest and most respected roofing manufacturer. CertainTeed's commitment to excellent quality complements our expert installation.<br><br>
+      <!-- warranty -->
+      <b>Warranty</b><br>Recovery Roofing &amp; Restoration offers a five-year warranty on workmanship and an extended manufacturer warranty on labor and materials. CertainTeed offers extended warranties for up to fifty years for an additional charge. <a href="www.certainteed.com">Please visit their site for more information</a>. <br><br>
+
+      We stand by everything we do. Should you ever have a question or concern regarding any work performed by Recovery Roofing &amp; Restoration, we are here to help. Please give us a call and we will work with you to make sure you remain completely satisfied.</p>
+    </div>
+
+  </div>
+
+  <!-- services mobile display -->
+  <strong class="show-for-small-only">
+  <div class="large-2 columns inspect">
+    <!-- free inspection form -->
+    <h2>SCHEDULE YOUR <br>FREE INSPECTION</h2>
+    <form>
+    <div class="row">
+      <div class="large-12 columns">
+        <input id="name-input" type="text" placeholder="Name" />
+      </div>
+    </div>
+    <div class="row">
+      <div class="large-12 columns">
+        <input id="phone-input" type="text" placeholder="Phone" />
+      </div>
+    </div>
+    <div class="row">
+      <div class="large-12 columns">
+        <input id="email-input" type="text" placeholder="Email" />
+      </div>
+    </div>
+    <div class="row">
+      <div class="large-12 columns">
+        <input id="zip-input" type="text" placeholder="Zip Code" />
+      </div>
+    </div>
+    <a href="#" class="button expand submitInspection">SUBMIT</a>
+    </form>
+  </div>
+  </strong>
+
+</template>
+
+
+<!-- CONTACT -->
+
+<template name="contactus">
+  <div class="row full-width">
+    <div class="large-10 columns contact">
+      <!-- title -->
+      <div class="row full-width">
+        <div class="large-7 columns">
+          <h3>Contact Us</h3>
+          <!-- phone/email -->
+          <p class="address">Phone: 888-358-4088
+          <br>Fax: 919-287-2228
+          <br>Email: <a href="mailto:admin@recoveryroofingnc.com">admin@recoveryroofingnc.com</a></p><br><br> 
+          <!-- contact form -->
+          <section class="contact section">
+          <div class="contact content" data-slug="panel1">
+          <form method="post" enctype="text/plain" data-abide="ajax" id="email-form">
+            <div class="row collapse">
+              <!-- name -->
+              <div class="large-12 columns">
+                <div class="name-field">
+                    <input id="yourName" type="text" required pattern="[a-zA-z ]+" placeholder="Jane Smith">
+                    <small class="error">Please enter a name (no numbers or symbols)</small>
+                </div>
+              </div>
+              <div class="row collapse">
+                <!-- email -->
+                <div class="large-12 columns">
+                  <div class="email-field">
+                    <input id="yourEmail" type="email" required placeholder="jsmith@gmail.com">
+                    <small class="error"> Please enter a valid email address </small>
+                  </div>
+                </div>
+              </div>
+              <!-- message -->
+              <textarea id="email-textarea" rows="8"></textarea><br>
+              <!-- submit button -->
+              <button type="submit" class="mainbutton radius button">Submit</button>
+            </div>
+          </form>
+          </div>
+          </section> 
+      </div>
+
+    <!-- addresses column -->
+    <div class="large-5 columns addresses">
+      <!-- addresses -->
+      <p><b>OUR MAIN ADDRESS</b><br><br>
+      Recovery Roofing &amp; Restoration<br>1738 Hillandale Road <br> Durham, NC 27705
+      <br><br><br>
+          
+      <b>ADDITIONAL OFFICES</b><br><br>
+      Recovery Roofing &amp; Restoration<br>32 Franklin St<br> 
+      Martinsville, VA 24112<br><br>
+      
+      Recovery Roofing &amp; Restoration<br>3730 West Wendover Ave<br>
+      Greensboro, NC 27407</p><br><br><br><br>
+    </div>
+
+  </div>
+  </div>
+
+    <!-- sidebar -->
+    <div class="large-2 columns social">
+      <!-- social icons -->
+      <a href="https://www.facebook.com/recoveryroofingandrestoration" target="_blank"><img class="social-icon" src="img/facebook.png"></a>&nbsp;&nbsp;&nbsp;
+      <a href="http://www.yelp.com/biz/recovery-roofing-durham" target="_blank"><img class="social-icon" src="img/yelp.png"></a> <br><br>
+      <!-- satisfaction blurb -->
+      <p class ="satisfaction">We stand by everything we do. Should you ever have a question or concern regarding any work performed by Recovery Roofing &amp; Restoration, we are here to help. Please give us a call and we will work with you to make sure you remain completely satisfied.</p>
+    </div>
+  </div>
+
+  <!-- contact mobile display -->
+  <strong class="show-for-small-only">
+  <div class="large-2 columns inspect">
+    <!-- free inspection form -->
+    <h2>SCHEDULE YOUR <br>FREE INSPECTION</h2>
+    <form>
+    <div class="row">
+      <div class="large-12 columns">
+        <input id="name-input" type="text" placeholder="Name" />
+      </div>
+    </div>
+    <div class="row">
+      <div class="large-12 columns">
+        <input id="phone-input" type="text" placeholder="Phone" />
+      </div>
+    </div>
+    <div class="row">
+      <div class="large-12 columns">
+        <input id="email-input" type="text" placeholder="Email" />
+      </div>
+    </div>
+    <div class="row">
+      <div class="large-12 columns">
+        <input id="zip-input" type="text" placeholder="Zip Code" />
+      </div>
+    </div>
+    <a href="#" class="button expand submitInspection">SUBMIT</a>
+    </form>
+  </div>
+  </strong>
+
+</template>
+
+
+<!-- FOOTER -->
+
+<template name="footer">
+  <footer>
+  <div class="row full-width footer">
+    <div class="large-12 columns"><hr>
+      <div class="row">
+        <div class="large-4 columns">
+          <p>© 2014 Recovery Roofing &amp; Restoration</p>
+        </div>
+        <div class="large-8 columns">
+        <ul class="inline-list right">
+          <li><a href="tel:+8883584088">888-210-4047</a></li>
+          <li><a href="mailto:info@amgofnc.com">admin@recoveryroofingnc.com</a></li>
+          <li><a href="https://www.google.com/maps/dir//1738+Hillandale+Rd,+Durham,+NC+27705/@36.027652,-78.9353919,17z/data=!4m13!1m4!3m3!1s0x89ace15c162e6917:0x1b9b209b04c32fa!2s1738+Hillandale+Rd!3b1!4m7!1m0!1m5!1m1!1s0x89ace15c162e6917:0x1b9b209b04c32fa!2m2!1d-78.9353919!2d36.027652" target="_blank">1738 Hillandale Road, Durham, NC 27705</a></li>
+        </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  </footer>
+</template>
+
