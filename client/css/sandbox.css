@@ -348,3 +348,22 @@ a:hover {
 	padding-left: 0;
 	padding-right: 0;
 }
+
+.blue-box{
+	background-color: #2399d5;
+	text-align: center;
+	cursor: pointer;
+	padding-bottom: 5px;
+}
+
+.blue-box:hover{
+	background-color: #1962ac;
+}
+
+#gutters-box{
+	padding-bottom: 23px;
+}
+
+#gutter-text{
+	padding-top: 1em;
+}
