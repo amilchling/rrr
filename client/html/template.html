@@ -27,7 +27,7 @@
             <li class="has-dropdown">
               <a href="{{pathFor 'services'}}">SERVICES</a>
                 <ul class="dropdown">
-                  <li><a href="#">Roof Replacements</a></li>
+                  <li><a href="{{pathFor 'services'}}">Roof Replacements</a></li>
                   <li><a href="#">Roof Repairs</a></li>
                   <li><a href="#">Gutters</a></li>
                   <li><a href="#">Emergency Services</a></li>
@@ -44,7 +44,6 @@
     </div>
     <!--free inspection form-->
     {{> inspectionForm}}
-    
 </div>
 </strong>
 
@@ -207,22 +206,22 @@
   <div class="row full-width main-services">
     <!--services-->
     <div class="large-2 columns">
-      <a href="#"><img src="img/roofing-icon2.png" onmouseover="this.src='img/roofing-icon.png'" onmouseout="this.src='img/roofing-icon2.png'" /></a>
+      <a href="{{pathFor 'services'}}"><div class="blue-box"><h2 class="box-text">Roof<br/>Replacements</h2></div></a>
     </div>
     <div class="large-2 columns">
-      <a href="#"><img src="img/roof-repair-icon2.png" onmouseover="this.src='img/roof-repair-icon.png'" onmouseout="this.src='img/roof-repair-icon2.png'" /></a>
+      <a href="{{pathFor 'services'}}"><div class="blue-box"><h2 class="box-text">Roof<br/>Repairs</h2></div></a>
      </div>
     <div class="large-2 columns">
-      <a href="#"><img src="img/gutter-icon2.png" onmouseover="this.src='img/gutter-icon.png'" onmouseout="this.src='img/gutter-icon2.png'" /></a>
+      <a href="{{pathFor 'services'}}"><div class="blue-box" id="gutters-box"><h2 class="box-text" id="gutter-text">Gutters<br/></h2></div></a>
     </div>
     <div class="large-2 columns">
-      <a href="#"><img src="img/storm-icon2.png" onmouseover="this.src='img/storm-icon.png'" onmouseout="this.src='img/storm-icon2.png'" /></a>
+      <div class="blue-box"><h2 class="box-text">Storm<br/>Damage</h2></div>
     </div>
     <div class="large-2 columns">
-      <a href="#"><img src="img/emergency-icon2.png" onmouseover="this.src='img/emergency-icon.png'" onmouseout="this.src='img/emergency-icon2.png'" /></a>
+      <div class="blue-box"><h2 class="box-text">Emergency<br/>Services</h2></div>
     </div>
     <div class="large-2 columns">
-      <a href="#"><img src="img/inspection-icon2.png" onmouseover="this.src='img/inspection-icon.png'" onmouseout="this.src='img/inspection-icon2.png'" /></a>
+      <div class="blue-box"><h2 class="box-text">Free<br/>Inspections</h2></div>
     </div>
   </div>
 </strong>
@@ -251,7 +250,7 @@
   <!-- arrangement for mobile view -->
   <strong class="show-for-small-only">
     <!--inspection -->
-    {{> inspectionForm2}}
+    {{> inspectionForm}}
 
     <!--services-->
     <div class="row full-width extra"> <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
@@ -367,7 +366,8 @@
       Contractors committed to quality workmanship and client satisfaction warranty their work. <br>
       <b>Yes, Recovery Roofing &amp; Restoration will warranty someone else’s work!</b><br><br></p>
       <img src="img/homes.jpg" alt="Filler 2" class="about-image2">
-    </div>
+      </div>
+
 
     <!-- SMALL testimonial -->
     <div class="large-2 columns testimonial2">
@@ -386,14 +386,11 @@
     </div>
   </div>
 
-
   <!-- SMALL inspection form -->
     {{> inspectionForm2}}
   </strong>
 
 </template>
-
-
 
 <!-- STORM DAMAGE -->
 
@@ -517,8 +514,7 @@
   
   </div>
   {{> inspectionForm2}}
-  </strong>
-
+</strong>
 </template>
 
 
@@ -703,6 +699,7 @@
     </form>
   </div>
 
+  {{> inspectionForm2}}
   </strong>
 
 </template>
@@ -855,7 +852,6 @@
   </div>
   <!-- SMALL inspection form -->
   {{> inspectionForm2}}
-  
   </strong>
 
 </template>
@@ -943,4 +939,5 @@
     </form>
   </div>
 </template>
+
 
