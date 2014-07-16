@@ -11,6 +11,20 @@ Template.main.rendered = function(){
 	});
 }
 
+Template.services.rendered = function(){
+	var hash = document.location.hash.substr(1);
+	console.log(hash);
+	if(hash==="emergency-service"||hash==="inspection-service"){
+		window.scroll(0, 1000);
+	}
+	else if(hash==="gutter-service"){
+		window.scroll(0, 650);
+	}
+	else if(hash==="repair-service"){
+		window.scroll(0, 100);
+	}
+}
+
 Template.header.events = {
 
 	'click .submitInspection' : function(event){

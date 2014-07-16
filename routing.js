@@ -5,3 +5,13 @@ Router.map(function(){
 	this.route('services');
 	this.route('contact');
 });
+
+var hooks = {
+
+	scrollUp: function(){
+		$('body,html').scrollTop(0);
+	}
+
+}
+
+Router.onAfterAction(hooks.scrollUp);

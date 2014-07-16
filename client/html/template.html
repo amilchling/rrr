@@ -27,11 +27,11 @@
             <li class="has-dropdown">
               <a href="{{pathFor 'services'}}">SERVICES</a>
                 <ul class="dropdown">
-                  <li><a href="{{pathFor 'services'}}">Roof Replacements</a></li>
-                  <li><a href="#">Roof Repairs</a></li>
-                  <li><a href="#">Gutters</a></li>
-                  <li><a href="#">Emergency Services</a></li>
-                  <li><a href="#">Free Inspections</a></li>
+                  <li><a href="{{pathFor 'services'}}#roof-services">Roof Replacements</a></li>
+                  <li><a href="{{pathFor 'services'}}#repair-service">Roof Repairs</a></li>
+                  <li><a href="{{pathFor 'services'}}#gutter-service">Gutters</a></li>
+                  <li><a href="{{pathFor 'services'}}#emergency-service">Emergency Services</a></li>
+                  <li><a href="{{pathFor 'services'}}#inspection-service">Free Inspections</a></li>
                 </ul>
             </li>
             <li class="active"><a href="{{pathFor 'contact'}}">CONTACT</a></li>
@@ -528,7 +528,7 @@
     <div class="large-10 columns service">  
     <h3>Services</h3>
     <!-- MEDIUM+ roof replacement + repairs -->
-    <div class="row full-width service-sections">
+    <div id="roof-service" class="row full-width service-sections">
       <div class="large-7 columns service-content">
         <p><b>ROOF REPLACEMENTS &amp; REPAIRS</b><br>
         We have been installing roofs and satisfying customers from day one.  Whether you need an entire re-roof or a small repair, our experience makes us perfect for the job. Our installers are highly trained, highly skilled and will leave your home better protected and more beautiful than ever before. </p>
@@ -539,7 +539,7 @@
     </div>
     
     <!-- MEDIUM+ roof replacement options -->
-    <div class="row full-width service-sections">
+    <div id="repair-service" class="row full-width service-sections">
       <div class="large-5 columns">
         <img src="img/homes.jpg" alt="Filler 1" class="service-image">
       </div>
@@ -550,7 +550,7 @@
     </div>
   
     <!-- MEDIUM+ gutters -->
-    <div class="row full-width service-sections">
+    <div id="gutter-service" class="row full-width service-sections">
       <div class="large-7 columns service-content">
         <p><b>GUTTERS</b><br>
         Damaged gutters aren’t only an eyesore on a home, but have the potential to lead to many other structural headaches. We carefully remove problem gutters and seamlessly install new ones. No more worry about leaking and sagging gutters. Let us install our custom fabricated gutters today.</p>
@@ -561,19 +561,19 @@
     </div>
    
     <!-- MEDIUM+ emergency services -->
-    <div class="row full-width service-sections">
+    <div id="emergency-service" class="row full-width service-sections">
       <div class="large-5 columns">
-      <img src="img/homes.jpg" alt="Filler 1" class="service-image">
-    </div>
-    <div class="large-7 columns service-content">
-    <p><b>EMERGENCY SERVICES</b><br>
-    Preliminary damages leave your home and belongings exposed to the elements, leading to more severe detriment. We dispatch immediate relief at the first sign of these critical problems. Our technicians are trained to make effective temporary repairs to protect your home until a settlement can be reached with your insurance company.</p>
-    </div>
+          <img src="img/homes.jpg" alt="Filler 1" class="service-image">
+      </div>
+      <div class="large-7 columns service-content">
+        <p><b>EMERGENCY SERVICES</b><br>
+        Preliminary damages leave your home and belongings exposed to the elements, leading to more severe detriment. We dispatch immediate relief at the first sign of these critical problems. Our technicians are trained to make effective temporary repairs to protect your home until a settlement can be reached with your insurance company.</p>
+      </div>
     </div>
 
     <!-- MEDIUM+ free inspections -->
     <div class="row full-width">
-      <div class="large-7 columns service-content">
+      <div id="inspection-service" class="large-7 columns service-content">
         <p><b>FREE ROOF INSPECTIONS</b><br>
         We provide free roof inspections for residents affected by storm damage. Our inspections expose simple maintenance items that can prolong your roofing system’s life and mitigate the risk of costly leaks. </p>
       </div>
